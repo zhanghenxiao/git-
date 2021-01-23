@@ -17,3 +17,11 @@ ssh-keygen -t rsa -C 'cookie.com'
 commit  信息一定要清晰，有几条就列几条
 
 插件 git history diff
+
+创建分支，
+
+合并分支（如果是master 需要合并demo-1,需要先保证已切换到了master），
+
+再推送到远程
+
+使用git pull 时需注意（本地没有提交的才能成功，否则会git pull失败，验证得出的） 
