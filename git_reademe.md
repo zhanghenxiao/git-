@@ -44,7 +44,15 @@ commit  信息一定要清晰，有几条就列几条
 
 vim 一些常用命令
 
+查看 vi a.js 
 
+i插入 q退出git模式  esc键退出编辑模式   :wq 保存退出
+
+删除文件rm -rf a.js 
+
+修改名字mv a.js b.js
+
+###### branch
 
 查看本地分支 git branch 
 
@@ -56,7 +64,7 @@ vim 一些常用命令
 
 提交信息  git commit -m '使用-a 没有被add 暂存的也能提交'  -a
 
-
+###### tag
 
 tag 是我们上线后，一个操作，分支的是v1.0.0,标签是t1.0.0这是规范
 
@@ -66,14 +74,22 @@ tag 是我们上线后，一个操作，分支的是v1.0.0,标签是t1.0.0这是
 
 删除本地tag  (git tag -d t1.0.0), 删除远程tag (git push origin :t1.0.0)
 
-
+###### 回退 revert  reset 这里需要多注意
 
 回到文件未修改时的状态 git checkout .
 
-版本回退revert
+版本回退revert，会保留更改的记录
+
+如 版本1  为e111 ,版本2 为e222，我们想要的是版本e222，我们需要操作的是e111
 
 git revert e111(注意e111我们需要回退的版本，然后我们再推送)
 
 git push origin demo-3 
 
 版本回退reset，甚至干掉了历史记录，但是会导致冲突  我们强制推送下就可以了
+
+git reset --hard e222
+
+git push origin demo-4 会有冲突
+
+我们使用强制推送 git push origin demo-4 --force
