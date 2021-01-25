@@ -52,6 +52,8 @@ i插入 q退出git模式  esc键退出编辑模式   :wq 保存退出
 
 修改名字mv a.js b.js
 
+除了master分支是git push ，其他分支都是git  push origin demo-3(分支名) 
+
 ###### branch
 
 查看本地分支 git branch 
