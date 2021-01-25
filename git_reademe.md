@@ -42,6 +42,10 @@ commit  信息一定要清晰，有几条就列几条
 
 ##### git 命令行
 
+vim 一些常用命令
+
+
+
 查看本地分支 git branch 
 
 查看本地和远程分支 git branch -a
@@ -52,7 +56,17 @@ commit  信息一定要清晰，有几条就列几条
 
 提交信息  git commit -m '使用-a 没有被add 暂存的也能提交'  -a
 
-git tag --list
+
+
+tag 是我们上线后，一个操作，分支的是v1.0.0,标签是t1.0.0这是规范
+
+查看所有tag   git tag --list
+
+创建本地tag 处于当前需要创建的位置  (git tag t1.0.0) ，tag推送到远程 git push origin t1.0.0
+
+删除本地tag  (git tag -d t1.0.0), 删除远程tag (git push origin :t1.0.0)
+
+
 
 回到文件未修改时的状态 git checkout .
 
