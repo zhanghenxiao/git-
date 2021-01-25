@@ -42,7 +42,13 @@ commit  信息一定要清晰，有几条就列几条
 
 ##### git 命令行
 
-创建分支，推送分支
+查看本地分支 git branch 
+
+查看本地和远程分支 git branch -a
+
+创建本地分支(git branch demo-2)，推送分支到远程(git push origin demo-2 )
+
+删除本地分支(git branch -D demo-2), 删除远程分支 （git push origin --delete demo-2）
 
 提交信息  git commit -m '使用-a 没有被add 暂存的也能提交'  -a
 
