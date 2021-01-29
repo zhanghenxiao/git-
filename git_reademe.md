@@ -95,3 +95,8 @@ git reset --hard e222
 git push origin demo-4 会有冲突
 
 我们使用强制推送 git push origin demo-4 --force
+
+
+
+<img src='./images/Git速查.jpg'>
+
