@@ -14,6 +14,18 @@ ssh-keygen -t rsa -C 'cookie.com'
 
 ##### vscode 使用git
 
+多人协作
+
+git feach 拉取所有分支
+
+git pull origin feature-login 拉取当前分支是否有更新
+
+本来你要开发一个新功能应该新建个分支，结果你忘记了再master上改了，还改的挺多你自己也忘记改哪些了，使用git checkout . 撤销所有肯定是不行的，我们使用git stash 暂存到其他的一个空间
+
+在新建分支 ，在使用git stash pop 拿出来
+
+
+
 commit  信息一定要清晰，有几条就列几条
 
 插件 git history diff
@@ -78,7 +90,9 @@ tag 是我们上线后，一个操作，分支的是v1.0.0,标签是t1.0.0这是
 
 ###### 回退 revert  reset 这里需要多注意
 
-回到文件未修改时的状态 git checkout .
+git checkout 400.js   我们反悔了，不想修改
+
+回到文件未修改时的状态 git checkout . 撤销所有文件修改
 
 版本回退revert，会保留更改的记录
 
