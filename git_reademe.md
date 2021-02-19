@@ -16,9 +16,29 @@ ssh-keygen -t rsa -C 'cookie.com'
 
 多人协作
 
+```
+git tag -l git列出本地所有tag标签
+```
+
 git feach 拉取所有分支
 
-git pull origin feature-login 拉取当前分支是否有更新
+ git branch -r //查看远程所有分支 
+
+git branch -a //查看本地和远程的所有分支 
+
+git branch <branchname> //新建分支 
+
+git branch -d <branchname> //删除本地分支 
+
+git branch -d -r <branchname> //删除远程分支，删除后还需推送到服务器 
+
+git push origin:<branchname>  //删除后推送至服务器 
+
+git branch -m <oldbranch> <newbranch> //重命名本地分支 
+
+git pull origin <branchname> 拉取当前分支是否有更新
+
+
 
 本来你要开发一个新功能应该新建个分支，结果你忘记了再master上改了，还改的挺多你自己也忘记改哪些了，使用git checkout . 撤销所有肯定是不行的，我们使用git stash 暂存到其他的一个空间
 
